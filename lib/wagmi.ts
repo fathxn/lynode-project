@@ -2,11 +2,11 @@
 'use client';
 
 import { createConfig, http } from 'wagmi';
-import { mainnet, polygon, arbitrum } from 'wagmi/chains';
+import { mainnet, polygon, arbitrum, sepolia } from 'wagmi/chains';
 import { metaMask, walletConnect, injected } from '@wagmi/connectors';
 
 export const config = createConfig({
-  chains: [mainnet, polygon, arbitrum],
+  chains: [mainnet, polygon, arbitrum, sepolia],
   connectors: (() => {
     if (typeof window === 'undefined') return []; // ⛔ avoid running during SSR
 
@@ -22,5 +22,6 @@ export const config = createConfig({
     [mainnet.id]: http(),
     [polygon.id]: http(),
     [arbitrum.id]: http(),
+    [sepolia.id]: http(),
   },
 });
