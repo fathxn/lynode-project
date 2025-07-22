@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: "GPU Rent Platform | Web3",
+    title: "Lynode - Decentralized AI Compute Network",
     description: "Rent GPU and CPU using blockchain securely and easily.",
     url: "https://lynode-project.vercel.app/",
     siteName: "GPU Rent",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GPU Rent Platform | Web3",
+    title: "Lynode - Decentralized AI Compute Network",
     description: "Rent GPU and CPU using blockchain securely and easily.",
     images: ["/logo-lynode.png"],
   },
