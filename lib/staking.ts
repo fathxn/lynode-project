@@ -59,6 +59,22 @@ export const STAKING_POOLS: StakingPool[] = [
     }
   },
   {
+    id: 'gpu-rtx3050',
+    name: 'NVIDIA RTX 3050',
+    type: 'GPU',
+    stakeAmount: '0.01',
+    apy: 10.2,
+    duration: 30,
+    totalStaked: '78.5',
+    availableSlots: 35,
+    specs: {
+      vram: '12GB GDDR6X',
+      cores: '5,888 CUDA',
+      memory: '12GB',
+      bandwidth: '504 GB/s'
+    }
+  },
+  {
     id: 'cpu-i7-12700k',
     name: 'Intel Core i7-12700K',
     type: 'CPU',

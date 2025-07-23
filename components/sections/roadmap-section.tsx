@@ -7,7 +7,7 @@ import { CheckCircle, Circle, Clock, Rocket, Zap, Globe, Building } from 'lucide
 export function RoadmapSection() {
   const roadmapItems = [
     {
-      quarter: '2024',
+      quarter: '2025',
       title: 'Phase 1 - Testnet & MVP',
       icon: Rocket,
       color: 'green',
