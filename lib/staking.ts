@@ -108,7 +108,7 @@ export const STAKING_POOLS: StakingPool[] = [
   }
 ];
 
-export const STAKING_CONTRACT_ADDRESS = '0xCE533268B19A6f46D5c529BBaCCf7fC778f26b43';
+export const STAKING_CONTRACT_ADDRESS = '0x50ddFb497aD381C1a6f7B43174Ef2963175A424d';
 
 export function calculateRewards(amount: string, apy: number, days: number): string {
   const principal = parseFloat(amount);
