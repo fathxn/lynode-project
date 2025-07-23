@@ -36,7 +36,7 @@ export function Navbar({ variant = 'landing' }: NavbarProps) {
     { label: 'About', href: '#about' },
     { label: 'Features', href: '#features' },
     { label: 'Tokenomics', href: '#tokenomics' },
-    // { label: 'Roadmap', href: '#roadmap' },
+    { label: 'Roadmap', href: '#roadmap' },
   ];
 
   const appNavItems = [

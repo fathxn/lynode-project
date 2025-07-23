@@ -6,12 +6,12 @@ import { PieChart, TrendingUp, Coins, Users } from 'lucide-react';
 
 export function TokenomicsSection() {
   const tokenData = [
-    { label: 'Compute Rewards', percentage: 40, color: '#a854f7', bgColor: 'bg-purple-500' },
+    { label: 'Liquid Pool', percentage: 80, color: '#a854f7', bgColor: 'bg-purple-500' },
     { label: 'Ecosystem Fund', percentage: 20, color: '#3b82f6', bgColor: 'bg-blue-500' },
-    { label: 'Team', percentage: 15, color: '#10b981', bgColor: 'bg-green-500' },
-    { label: 'Private Sale', percentage: 10, color: '#f59e0b', bgColor: 'bg-orange-500' },
-    { label: 'Public Sale', percentage: 10, color: '#ef4444', bgColor: 'bg-red-500' },
-    { label: 'Foundation Reserve', percentage: 5, color: '#8b5cf6', bgColor: 'bg-violet-500' }
+    // { label: 'Team', percentage: 15, color: '#10b981', bgColor: 'bg-green-500' },
+    // { label: 'Private Sale', percentage: 10, color: '#f59e0b', bgColor: 'bg-orange-500' },
+    // { label: 'Public Sale', percentage: 10, color: '#ef4444', bgColor: 'bg-red-500' },
+    // { label: 'Foundation Reserve', percentage: 5, color: '#8b5cf6', bgColor: 'bg-violet-500' }
   ];
 
   const metrics = [
@@ -70,8 +70,8 @@ export function TokenomicsSection() {
           className="text-center mb-6"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            <span className="text-purple-400">
-              Tokenomics
+            Tokenomics <span className="text-purple-400">
+              ($LYN)
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -94,8 +94,10 @@ export function TokenomicsSection() {
               {tokenData.map((item, index) => (
                 <div key={index} className="flex items-center justify-between">
                   <div className="flex items-center space-x-3">
-                    <div className={`w-4 h-4 rounded-full ${item.bgColor}`}></div>
-                    <span className="text-white">{item.label}</span>
+                    {/* <div className="bg-purple-500 opacity-10 rounded-2xl p-6"> */}
+                      <div className={`w-4 h-4 rounded-full ${item.bgColor}`}></div>
+                      <span className="text-white">{item.label}</span>
+                    {/* </div> */}
                   </div>
                   <span className="text-gray-300 font-semibold">{item.percentage}%</span>
                 </div>

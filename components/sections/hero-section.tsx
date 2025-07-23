@@ -52,7 +52,7 @@ export function HeroSection() {
             </Link>
             
             <button className="inline-flex items-center px-8 py-4 border border-purple-500/40 text-purple-300 font-semibold rounded-lg hover:bg-purple-500/10 transition-colors duration-200">
-              Read Whitepaper
+              <Link href="https://lynode.gitbook.io/lynode-docs">Read Whitepaper</Link>
             </button>
           </motion.div>
 
